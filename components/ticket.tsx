@@ -214,7 +214,7 @@ export default function TicketGenerator() {
                     <div className='flex flex-row justify-between'>
                         <div>
                             <img className='w-12 h-12 object-contain rounded-lg' src='/icon.png' alt="Event Icon" />
-                            <h2 className="text-2xl font-bold mb-2 font-orbitron">#{eventName}</h2>
+                            <h2 className="text-2xl font-bold mt-1 font-orbitron">{eventName}</h2>
                             <p className="text-lg font-exo">{ownerName}</p>
                         </div>
                         {isSubscriber && <span className="badge"><img className='w-12 h-12 p-0.5 object-contain' src={'/sub_badge.png'}></img></span>}

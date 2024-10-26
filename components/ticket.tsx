@@ -124,7 +124,7 @@ export default function TicketGenerator() {
                         { headers }
                     );
                     const subscriptionData = await subscriptionResponse.json();
-                    setIsSubscriber(subscriptionData.data.length > 0);
+                    setIsSubscriber(subscriptionData?.data?.length > 0);
 
                     await checkFollowingStatus(accessToken, userLogin, streamerData.data[0]?.login);
                 }

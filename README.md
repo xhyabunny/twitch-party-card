@@ -32,7 +32,7 @@ Simply the name of the event
 ```
 NEXT_PUBLIC_DEFAULT_OWNER_NAME="John Doe"
 ```
-The default name that appears in the `Name on card` label.
+The default name that appears in the `Name on ticket` label.
 ![image](https://github.com/user-attachments/assets/e9636724-6722-46e8-89c2-b962f48bf424)
 
 ### DEFAULT THEME
@@ -54,3 +54,26 @@ There are two types of images as of rn.
 - The Sub badge (sub_badge.png)
 The sub badge will appear only if the user is following the streamer you specified in your `.env` file
 To change the card's images simply replace the images with the new ones and make sure the names of the files match the current ones.
+
+### Theming
+There are way lots of themes you can use for the cards, some of them are set up so you can only use them if you're subscribed to the streamer.
+Simply change the themes by going to `config/settings.ts` and changing the `colorPalettes` section.
+![image](https://github.com/user-attachments/assets/6fe12137-2df0-45ca-96a3-539a09a01d57)
+As you see, every color palette has 2 values inside each one.
+- colors: Array of colors that go from left to right that are displayed smoothly as a background in the card.
+- isPremium: A boolean that states if said style is only for subs or free for all.
+The color palette name formats automatically in the client side using regex, so lets say you want the style to be named "Orange Yellow", so then the name the new style inside the Object's key "orangeYellow".
+
+Example:
+```
+    orangeYellow: { colors: [], isPremium: boolean }
+```
+
+### Finishing
+That's pretty much everything you have to know, enjoy your building!
+
+You're free to contribute to this project with newer & cooler features!
+
+Report your bugs filling an issue in this repo!
+
+- xhyabunny

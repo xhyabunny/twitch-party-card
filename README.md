@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PARTY CARD GENERATOR!
 
-## Getting Started
+## Installation
+- Git clone this repo
+- Execute `npm install`
+- Rename `.env.example` file to `.env` and adjust it following the next steps.
 
-First, run the development server:
+## Environment
+### STREAMER ID
+```
+NEXT_PUBLIC_STREAMER_ID=twitch_streamer_id
+```
+The Id of the streamer that is hosting the party or event.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+You can use [this page](https://www.streamweasels.com/tools/convert-twitch-username-to-user-id/) to find the id of an user or streamer.
+### REDIRECT URI
+```
+NEXT_PUBLIC_REDIRECT_URI="http://localhost:3000"
+```
+The redirect Uri that twitch api is going to use when executing the OAuth2 link.
+
+⚠ Make sure the Redirect Uri matches the link you put in your Twitch Developer console App.
+![image](https://github.com/user-attachments/assets/20c2bfc6-8b39-4749-bdc9-c2c8411ef820)
+
+### EVENT NAME
+```
+NEXT_PUBLIC_EVENT_NAME="Event name"
+```
+Simply the name of the event
+
+### DEFAULT OWNER NAME
+```
+NEXT_PUBLIC_DEFAULT_OWNER_NAME="John Doe"
+```
+The default name that appears in the `Name on ticket` label.
+![image](https://github.com/user-attachments/assets/e9636724-6722-46e8-89c2-b962f48bf424)
+
+### DEFAULT THEME
+```
+NEXT_PUBLIC_DEFAULT_THEME="smythOs"
+```
+The default theme the card will appear with when opening the page.
+Default is "smythOS"
+
+### TWITCH API CLIENT ID
+```
+NEXT_PUBLIC_CLIENT_ID=your_twitch_api_client_id
+```
+The Twitch API Client ID on your Twitch developer console App.
+
+## Logos & Badges
+There are two types of images as of rn.
+- The Main Logo ([icon.png](https://github.com/user-attachments/assets/df991703-08f9-4a40-968f-821c4156cbd9)) <img src="https://github.com/user-attachments/assets/df991703-08f9-4a40-968f-821c4156cbd9" alt="icon" style="width: 37px; height: auto;">
+
+- The Sub badge ([sub_badge.png](https://github.com/user-attachments/assets/50227021-b10b-4f7c-8565-6a20c54e6d8f)) <img src="https://github.com/user-attachments/assets/50227021-b10b-4f7c-8565-6a20c54e6d8f" alt="sub badge" style="width: 60px; height: auto;">
+
+The sub badge will appear only if the user is following the streamer you specified in your `.env` file
+To change the card's images simply replace the images with the new ones and make sure the names of the files match the current ones.
+
+## Theming
+There are way lots of themes you can use for the cards, some of them are set up so you can only use them if you're subscribed to the streamer.
+Simply change the themes by going to `config/settings.ts` and changing the `colorPalettes` section.
+
+![image](https://github.com/user-attachments/assets/6fe12137-2df0-45ca-96a3-539a09a01d57)
+As you see, every color palette has 2 values inside each one.
+- **colors:** Array of colors that go from left to right that are displayed smoothly as a background in the card.
+- **isPremium:** A boolean that states if said style is only for subs or free for all.
+
+The color palette name formats automatically in the client side using regex, so lets say you want the style to be named "Orange Yellow", so then name the new style inside the Object's key "orangeYellow".
+
+#### Example:
+```js
+orangeYellow: { colors: [], isPremium: boolean }
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Finishing
+That's pretty much everything you have to know, enjoy your building!
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You're free to contribute to this project with newer & cooler features!
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Report your bugs filling an issue in this repo!
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **xhyabunny 2025**

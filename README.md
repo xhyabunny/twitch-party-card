@@ -63,8 +63,8 @@ Simply change the themes by going to `config/settings.ts` and changing the `colo
 
 ![image](https://github.com/user-attachments/assets/6fe12137-2df0-45ca-96a3-539a09a01d57)
 As you see, every color palette has 2 values inside each one.
-- colors: Array of colors that go from left to right that are displayed smoothly as a background in the card.
-- isPremium: A boolean that states if said style is only for subs or free for all.
+- **colors:** Array of colors that go from left to right that are displayed smoothly as a background in the card.
+- **isPremium:** A boolean that states if said style is only for subs or free for all.
 
 The color palette name formats automatically in the client side using regex, so lets say you want the style to be named "Orange Yellow", so then name the new style inside the Object's key "orangeYellow".
 

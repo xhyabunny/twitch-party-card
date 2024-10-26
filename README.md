@@ -48,32 +48,35 @@ NEXT_PUBLIC_CLIENT_ID=your_twitch_api_client_id
 ```
 The Twitch API Client ID on your Twitch developer console App.
 
-### Logos & Badges
+## Logos & Badges
 There are two types of images as of rn.
-- The Main Logo (icon.png)
-- The Sub badge (sub_badge.png)
+- The Main Logo (icon.png) <img src="https://github.com/user-attachments/assets/df991703-08f9-4a40-968f-821c4156cbd9" alt="icon" style="width: 40px; height: auto;">
+
+- The Sub badge (sub_badge.png) <img src="https://github.com/user-attachments/assets/50227021-b10b-4f7c-8565-6a20c54e6d8f" alt="sub badge" style="width: 60px; height: auto;">
+
 The sub badge will appear only if the user is following the streamer you specified in your `.env` file
 To change the card's images simply replace the images with the new ones and make sure the names of the files match the current ones.
 
-### Theming
+## Theming
 There are way lots of themes you can use for the cards, some of them are set up so you can only use them if you're subscribed to the streamer.
 Simply change the themes by going to `config/settings.ts` and changing the `colorPalettes` section.
+
 ![image](https://github.com/user-attachments/assets/6fe12137-2df0-45ca-96a3-539a09a01d57)
 As you see, every color palette has 2 values inside each one.
 - colors: Array of colors that go from left to right that are displayed smoothly as a background in the card.
 - isPremium: A boolean that states if said style is only for subs or free for all.
 The color palette name formats automatically in the client side using regex, so lets say you want the style to be named "Orange Yellow", so then the name the new style inside the Object's key "orangeYellow".
 
-Example:
-```
-    orangeYellow: { colors: [], isPremium: boolean }
+#### Example:
+```js
+orangeYellow: { colors: [], isPremium: boolean }
 ```
 
-### Finishing
+## Finishing
 That's pretty much everything you have to know, enjoy your building!
 
 You're free to contribute to this project with newer & cooler features!
 
 Report your bugs filling an issue in this repo!
 
-- xhyabunny
+- **xhyabunny 2025**

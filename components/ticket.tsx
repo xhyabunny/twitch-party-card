@@ -134,7 +134,7 @@ export default function TicketGenerator() {
                 setLoading(false);
             }
         };
-
+        setUniqueId(generateUniqueId())
         initialize();
     }, []);
 

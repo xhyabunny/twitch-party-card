@@ -50,7 +50,7 @@ The Twitch API Client ID on your Twitch developer console App.
 
 ## Logos & Badges
 There are two types of images as of rn.
-- The Main Logo ([icon.png](https://github.com/user-attachments/assets/df991703-08f9-4a40-968f-821c4156cbd9))  <img src="https://github.com/user-attachments/assets/df991703-08f9-4a40-968f-821c4156cbd9" alt="icon" style="width: 37px; height: auto;">
+- The Main Logo ([icon.png](https://github.com/user-attachments/assets/df991703-08f9-4a40-968f-821c4156cbd9)) <img src="https://github.com/user-attachments/assets/df991703-08f9-4a40-968f-821c4156cbd9" alt="icon" style="width: 37px; height: auto;">
 
 - The Sub badge ([sub_badge.png](https://github.com/user-attachments/assets/50227021-b10b-4f7c-8565-6a20c54e6d8f)) <img src="https://github.com/user-attachments/assets/50227021-b10b-4f7c-8565-6a20c54e6d8f" alt="sub badge" style="width: 60px; height: auto;">
 

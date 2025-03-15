@@ -1,4 +1,6 @@
-# PARTY CARD GENERATOR!
+# TWITCH PARTY CARD GENERATOR!
+This page will allow you to make special card invites for things like events on streams!
+Counting with VIP access (Twitch Sub) as you link your twitch account with the page.
 
 ## Installation
 - Git clone this repo

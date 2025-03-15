@@ -58,7 +58,7 @@ There are two types of images as of rn.
 
 The sub badge will appear only if the user is suscribed to the streamer you specified in your `.env` file.
 
-To change the card's images simply replace the images with the new ones and make sure the names of the files match the current ones.
+To change the card's images simply replace the images with the new ones and make sure the name of the files match the current ones.
 
 ## Theming
 There are way lots of themes you can use for the cards, some of them are set up so you can only use them if you're subscribed to the streamer.

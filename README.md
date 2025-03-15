@@ -56,7 +56,7 @@ There are two types of images as of rn.
 
 - The Sub badge ([sub_badge.png](https://github.com/user-attachments/assets/50227021-b10b-4f7c-8565-6a20c54e6d8f)) <img src="https://github.com/user-attachments/assets/50227021-b10b-4f7c-8565-6a20c54e6d8f" alt="sub badge" style="width: 60px; height: auto;">
 
-The sub badge will appear only if the user is following the streamer you specified in your `.env` file.
+The sub badge will appear only if the user is suscribed to the streamer you specified in your `.env` file.
 
 To change the card's images simply replace the images with the new ones and make sure the names of the files match the current ones.
 
